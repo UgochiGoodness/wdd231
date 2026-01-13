@@ -23,12 +23,6 @@ header span {
   font-weight: bold;
 }
 
-/* Header content layout */
-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 /* ---------- HAMBURGER ---------- */
 .hamburger {
