@@ -1,0 +1,161 @@
+/* ---------- BASE ---------- */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Header content layout */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------- HAMBURGER ---------- */
+.hamburger {
+  margin-left: auto;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "☰";
+}
+
+/* ---------- NAVIGATION ---------- */
+nav.navigation {
+  display: none;              /* hidden on small screens */
+  flex-direction: column;
+  background-color: #003366;
+  text-align: center;
+}
+
+nav.navigation a {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav.navigation a:hover,
+nav.navigation a.current {
+  background-color: #0055aa;
+}
+
+/* Show nav when JS toggles it */
+nav.navigation.open {
+  display: flex;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.card h2 {
+  background-color: #003366;
+  color: white;
+  padding: 0.75rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.course-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Shared button styles */
+.course-filters button {
+  padding: 0.6rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.course-filters button:hover {
+  background-color: #003366;
+}
+
+/* ---------- BROAD FILTERS ---------- */
+.filter-group.broad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* equal width */
+  gap: 0.5rem;
+}
+
+/* Make broad filters visually stronger */
+.filter-group.broad button {
+  font-size: 1rem;
+}
+
+/* ---------- SPECIFIC FILTERS ---------- */
+.filter-group.specific {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* equal width */
+  gap: 0.5rem;
+}
+
+.filter-group.specific button {
+  background-color: #333;
+  font-size: 0.9rem;
+}
+
+
+/* ---------- ASIDE ---------- */
+aside {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer nav.sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 30px;
+}

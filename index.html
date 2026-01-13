@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="This is a course landing page for Ugochi Goodness Ugorji. ">
+    <meta name="author" content="Ugochi Goodness Ugorji">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <script src="js/navigation.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/courses.js" defer></script>
+
+        <!--Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="50" height="50">
+        <span>Course Home Page</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+       <a class="current" href="#">Home</a>
+       <a href="#">Chamber Project</a>
+       <a href="#">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2 class="about me">About Me</h2>
+            <p>My name is Ugochi Goodness Ugorji from Nigeria, a passionate individual with high regard for hardwork. <br>I am studying web and software development at BYU-Pathway Worldwide.The course has given me the opportunity to brainstorm and do hard things. 
+                <br>I have no prior knowledge about this course but as i study my mind was open to learning.I am grateful for opportunity to learn and explore.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2 class="web certificate courses">Web Certificate Courses</h2>
+         <div class="course-filters">
+
+            <div class="filter-group broad">
+               <button data-filter="all">All</button>
+               <button data-filter="cse">CSE</button>
+               <button data-filter="wdd">WDD</button>
+            </div>
+
+            <div class="filter-group specific">
+                <button data-filter="wdd130">WDD 130</button>
+                <button data-filter="wdd131">WDD 131</button>
+                <button data-filter="wdd231">WDD 231</button>
+           </div>
+         </div>
+
+            <p>The total credits for course listed above is 6</p>
+        </section>
+    </main>
+
+    <aside>
+        <section class="card">
+               <h2>Ugochi Goodness Ugorji</h2>
+               <img src="images/goodness.jpg" alto="Ugochi Goodness Ugorji" width="200" height="200">
+        </section>
+    </aside>
+
+    <footer>
+        <nav class="sociallinks">
+          <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com">
+            <img src="images/twitter-x.svg" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com/in/ugochi-goodness-ugorji?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByvwgvwNKQumSyYw7Ydek9g%3D%3D">
+            <img src="images/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/UgochiGoodness">
+            <img src="images/github.svg" alt="GitHub" />
+          </a>
+        </nav>
+        <p>© <span id="currentyear"></span> ♦ Ugochi Goodness Ugorji ♦ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
