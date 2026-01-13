@@ -26,12 +26,14 @@
     display: none;
   }
 
-  main {
-    grid-area: main;
+
+  .top-sections {
+    display: flex;
+    gap: 1rem;
   }
 
-  aside {
-  align-self: start;
+  .top-sections > section {
+    flex: 1;  /* equal width */
   }
 
   footer {

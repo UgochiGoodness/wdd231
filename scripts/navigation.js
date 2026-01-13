@@ -1,3 +1,4 @@
+// navigation.js
 const navButton = document.getElementById("nav-button");
 const navBar = document.getElementById("nav-bar");
 
