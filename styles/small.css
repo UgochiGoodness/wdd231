@@ -53,7 +53,7 @@ nav.navigation a {
 
 nav.navigation a:hover,
 nav.navigation a.current {
-  background-color: #003366;
+  background-color: #0055aa;
 }
 
 /* Show nav when JS toggles it */
@@ -101,7 +101,7 @@ main {
 }
 
 .course-filters button:hover {
-  background-color: #003366;
+  background-color: #0055aa
 }
 
 /* ---------- BROAD FILTERS ---------- */
