@@ -44,7 +44,6 @@ header span {
 nav.navigation {
   display: none;              /* hidden on small screens */
   flex-direction: column;
-  background-color: #0055aa;
   text-align: center;
 }
 
