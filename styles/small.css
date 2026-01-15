@@ -13,13 +13,15 @@ header {
 }
 
 header img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 header span {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 
@@ -31,6 +33,7 @@ header span {
   border: none;
   color: white;
   cursor: pointer;
+  padding-left: 50px;
 }
 
 .hamburger::before {
@@ -47,6 +50,7 @@ nav.navigation {
 
 nav.navigation a {
   padding: 1rem;
+  gap: 2px;
   color: white;
   text-decoration: none;
 }
@@ -93,15 +97,7 @@ main {
 /* Shared button styles */
 .course-filters button {
   padding: 0.6rem;
-  border: none;
-  background-color: #333;
-  color: white;
   cursor: pointer;
-  font-weight: 600;
-}
-
-.course-filters button:hover {
-  background-color: #0055aa
 }
 
 /* ---------- BROAD FILTERS ---------- */
@@ -109,11 +105,20 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* equal width */
   gap: 0.5rem;
+  font-weight: 600;
 }
 
 /* Make broad filters visually stronger */
 .filter-group.broad button {
   font-size: 1rem;
+  background-color: #b7b6b6;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  border-color: #333;
+}
+
+.filter-group.broad button:hover {
+  background-color: #0055aa
 }
 
 /* ---------- SPECIFIC FILTERS ---------- */
@@ -121,13 +126,15 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* equal width */
   gap: 0.5rem;
+  font-weight: 600;
 }
 
 .filter-group.specific button {
-  background-color: #333;
+  background-color: #b7b6b6;
   font-size: 0.9rem;
+  border-radius: 2px;
+  border-color: #333;
 }
-
 
 /* ---------- FOOTER ---------- */
 footer {

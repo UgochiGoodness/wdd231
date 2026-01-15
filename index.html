@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Home Page</title>
-    <meta name="description" content="This is a course landing page for Ugochi Goodness Ugorji. ">
-    <meta name="author" content="Ugochi Goodness Ugorji">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Home Page</title>
+  <meta name="description" content="This is a course landing page for Ugochi Goodness Ugorji. ">
+  <meta name="author" content="Ugochi Goodness Ugorji">
+ 
+     <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scritps/dates.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
-        <!--Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="site logo" width="50" height="50">
-        <span>Course Home Page</span>
+        <img src="images/logo.svg" alt="site logo" width="40" height="40">
+        <span>Ugochi Goodness Ugorji</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
-       <a class="current" href="#">Home</a>
-       <a href="#">Chamber Project</a>
-       <a href="#">Final Project</a>
+       <a href="index.html" class="active">Home</a>
+       <a href="chamber/">Chamber</a>
+       <a href="final/">Final</a>
     </nav>
 
     <main>
         <h1>Home</h1>
+
+    <div class="top-sections">
         <section class="card">
             <h2 class="about me">About Me</h2>
             <p>My name is Ugochi Goodness Ugorji from Nigeria, a passionate individual with high regard for hardwork. <br>I am studying web and software development at BYU-Pathway Worldwide.The course has given me the opportunity to brainstorm and do hard things. 
@@ -45,8 +48,9 @@
 
         <section class="card">
                <h2>Ugochi Goodness Ugorji</h2>
-               <img src="images/goodness.jpg" alt="Ugochi Goodness Ugorji" width="200" height="200">
+               <img src="images/goodness.jpg" alt="Ugochi Goodness Ugorji" width="143" height="143">
         </section>
+    </div>
 
         <section class="card">
             <h2 class="web certificate courses">Web Certificate Courses</h2>

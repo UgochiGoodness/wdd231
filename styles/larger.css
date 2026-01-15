@@ -28,11 +28,16 @@
 
   .top-sections {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: flex-start;
   }
 
-  .top-sections > section {
-    flex: 1;  /* equal width */
+  .top-sections section:first-child {
+    flex: 2;   /* About Me → wider */
+  }
+
+  .top-sections section:last-child {
+    flex: 1;   /* Image section → narrower */
   }
 
   footer {
