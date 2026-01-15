@@ -112,7 +112,7 @@ main {
   font-size: 1rem;
   background-color: #b7b6b6;
   font-size: 0.9rem;
-  border-radius: 2px;
+  border-radius: 3px;
   border-color: #333;
 }
 
@@ -130,7 +130,7 @@ main {
 
 .filter-group.specific button {
   background-color: #b7b6b6;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 2px;
   border-color: #333;
 }
