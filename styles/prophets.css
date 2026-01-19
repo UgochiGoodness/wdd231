@@ -1,0 +1,82 @@
+:root {
+  --primary: #1f3a5f;
+  --secondary: #f4f6f9;
+  --card-bg: #ffffff;
+  --accent: #3a6ea5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary);
+  color: #222;
+}
+
+/* HEADER & FOOTER */
+header,
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding: 1.5rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* PROPHET CARDS */
+section {
+  background-color: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+section p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* IMAGE */
+section img {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
