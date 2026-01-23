@@ -121,21 +121,6 @@ main {
   background-color: #0055aa
 }
 
-/* ---------- SPECIFIC FILTERS ---------- */
-.filter-group.specific {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* equal width */
-  gap: 0.5rem;
-  font-weight: 600;
-}
-
-.filter-group.specific button {
-  background-color: #b7b6b6;
-  font-size: 0.8rem;
-  border-radius: 2px;
-  border-color: #333;
-}
-
 /* ---------- FOOTER ---------- */
 footer {
   background-color: #0055aa;
@@ -152,4 +137,24 @@ footer nav.sociallinks {
 
 footer img {
   width: 30px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 0.2px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.course-card.completed {
+  background-color: #cce5cc;
+  border-color: #2d7a2d;
+  font-weight: bold;
 }

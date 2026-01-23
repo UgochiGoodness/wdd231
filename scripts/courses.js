@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,61 @@ const courses = [
         completed: false
     }
 ]
+
+// DOM references
+const coursesContainer = document.getElementById("courses-container");
+const creditTotal = document.getElementById("creditTotal");
+
+// Display courses
+function displayCourses(courseList) {
+  coursesContainer.innerHTML = "";
+
+  courseList.forEach(course => {
+    const card = document.createElement("div");
+    card.classList.add("course-card");
+
+    if (course.completed) {
+      card.classList.add("completed");
+    }
+
+    card.innerHTML = `
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+      <span>${course.credits} credits</span>
+    `;
+
+    coursesContainer.appendChild(card);
+  });
+
+  updateCredits(courseList);
+}
+
+// Credit calculation using reduce
+function updateCredits(courseList) {
+  const totalCredits = courseList.reduce(
+    (total, course) => total + course.credits,
+    0
+  );
+
+  creditTotal.textContent = `Total Credits: ${totalCredits}`;
+}
+
+// Filter buttons
+document.querySelectorAll(".filter-group.broad button").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    let filteredCourses = courses;
+
+    if (filter === "wdd") {
+      filteredCourses = courses.filter(c => c.subject === "WDD");
+    } else if (filter === "cse") {
+      filteredCourses = courses.filter(c => c.subject === "CSE");
+    }
+
+    displayCourses(filteredCourses);
+  });
+});
+
+// Initial display
+displayCourses(courses);
