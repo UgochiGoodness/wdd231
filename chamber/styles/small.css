@@ -30,7 +30,8 @@ header img {
 
 header h1 {
   font-weight: 600;
-  margin-right: 310px;
+  font-size: large;
+  margin-right: 510px;
   
 }
 
@@ -60,21 +61,23 @@ nav {
   color: #000;
 }
 
-/* ---------- Hamburger Menu ---------- */
 #menu {
   background: none;
   border: none;
-  font-size: 1.8rem;
-  color: #fff;
+  font-size: 1.5rem;       /* Make hamburger icon bigger */
+  color: #fff;             /* White color for contrast */
   cursor: pointer;
+  padding: 0.25rem 0.5rem; /* Give it some clickable padding */
+  display: inline-block;   /* Make sure it’s visible */
+  z-index: 1000;           /* Make sure it’s above other elements */
 }
 
 #menu::before {
-  content: "☰";
+  content: "☰"; /* hamburger icon */
 }
 
-#menu.open::before {
-  content: "✖";
+.navigation {
+  display: none; /* hidden by default on mobile */
 }
 
 .navigation.open {

@@ -44,14 +44,8 @@
   }
 
   /* Hide hamburger button */
-  #menu {
+   #menu {
     display: none;
-  }
-
-  /* Show navigation normally */
-  .navigation {
-    display: flex;
-    gap: 1rem;
   }
 
   /* ---------- Directory Grid ---------- */
