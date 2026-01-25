@@ -62,3 +62,32 @@
     text-align: right;
   }
 }
+
+/* Hero spans full width */
+.hero {
+  grid-column: 1 / -1;
+}
+
+/* Events & Weather side by side */
+.events {
+  grid-column: 1 / 2;
+}
+
+.weather {
+  grid-column: 2 / 3;
+}
+
+/* Spotlights full width */
+.spotlights {
+  grid-column: 1 / -1;
+}
+
+/* Spotlight cards in a row */
+.spotlight-cards {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spotlight-card {
+  flex: 1;
+}

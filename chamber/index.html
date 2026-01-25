@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bende Chamber of Commerce | Directory</title>
+    <title>Bende Chamber of Commerce | Home</title>
     <meta name="description" content="The Bende Chamber of Commerce business directory provides a comprehensive listing of local businesses, services, and member organizations in Nigeria.">
     <meta name="author" content="Ugochi Goodness Ugorji">
 
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
 </head>
 
 <body>
@@ -43,15 +44,34 @@
     </header>
 
         <main>
-         <div class="view-buttons">
-           <button id="grid">Grid</button>
-           <button id="list">List</button>
-         </div>
 
-          <section id="members" class="grid">
-              <h2 class="sr-only">Business Directory Members</h2>
-                 <!-- Member cards will be inserted here via JS -->
-          </section>
+                  <!-- HERO -->
+                <section class="hero">
+                  <img src="images/hero.jpg" alt="Bende community and local businesses">
+                  <a href="#" class="cta">Join the Chamber</a>
+                </section>
+
+                   <!-- EVENTS -->
+                    <section class="events">
+                         <h2>Current Events</h2>
+                            <p>Business Networking Night – March 15</p>
+                           <p>Small Business Workshop – April 2</p>
+                    </section>
+
+                         <!-- WEATHER -->
+                    <section class="weather">
+                        <h2>Weather</h2>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <div id="forecast"></div>
+                    </section>
+
+                        <!-- SPOTLIGHTS -->
+                <section class="spotlights">
+                     <h2>Member Spotlights</h2>
+                     <div class="spotlight-cards"></div>
+                </section>
+
         </main>
 
     <footer>
@@ -85,6 +105,7 @@
 
        </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
+      <script src="scripts/spotlights.js" defer></script>
+      <script src="scripts/weather.js" defer></script>
 </body>
 </html>
