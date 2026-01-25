@@ -72,12 +72,21 @@ nav {
   z-index: 1000;           /* Make sure it’s above other elements */
 }
 
-#menu::before {
-  content: "☰"; /* hamburger icon */
+/* ---------- Hamburger Menu ---------- */
+#menu {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
 }
 
-.navigation {
-  display: none; /* hidden by default on mobile */
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✖";
 }
 
 .navigation.open {
