@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bende Chamber of Commerce | Directory</title>
-    <meta name="description" content="Chamber of Commerce business directory for Bende Chamber of Comer located in Nigeria">
+    <meta name="description" content="The Bende Chamber of Commerce business directory provides a comprehensive listing of local businesses, services, and member organizations in Bende, Abia State, Nigeria. 
+    This directory is designed to connect residents and visitors with trusted businesses, showcase member companies’ services, and support economic growth in the region. Explore company profiles, contact information, and membership levels all in one easy-to-use resource.">
     <meta name="author" content="Ugochi Goodness Ugorji">
 
        <!-- Favicon -->
@@ -12,8 +13,12 @@
 
        <!-- Facebook Meta -->
     <meta property="og:title" content="Bende Chamber of Commerce">
-    <meta property="og:description" content="Supporting local businesses in Bende, Niegria so that there will be visibility, growth and connection.">
-    <meta property="og:image" content="images/facebook.png">
+    <meta property="og:description" content="The Bende Chamber of Commerce is dedicated to supporting local businesses in Bende, 
+    Nigeria, by providing them with greater visibility, opportunities for growth, and meaningful connections within the community. Through networking events, business listings, and promotional resources, the chamber helps members expand their reach, build strong partnerships, and strengthen the local economy. 
+    Our goal is to foster collaboration, increase awareness of local services, and ensure that every business has the tools to succeed and thrive.">
+    <meta property="og:image" content="https://UgochiGoodness.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://UgochiGoodness.github.io/wdd231/chamber/">
 
        <!-- Google Font -->
@@ -24,6 +29,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,14 +48,15 @@
     </header>
 
         <main>
-          <h2>Business Directory</h2>
-
          <div class="view-buttons">
            <button id="grid">Grid</button>
            <button id="list">List</button>
          </div>
 
-          <section id="members" class="grid"></section>
+          <section id="members" class="grid">
+              <h2 class="sr-only">Business Directory Members</h2>
+                 <!-- Member cards will be inserted here via JS -->
+          </section>
         </main>
 
     <footer>
@@ -82,7 +90,5 @@
 
        </div>
     </footer>
-
-      <script src="scripts/directory.js" defer></script>
 </body>
 </html>

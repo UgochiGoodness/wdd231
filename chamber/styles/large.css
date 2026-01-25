@@ -1,4 +1,46 @@
 @media (min-width: 768px) {
+  /* ---------- Header ---------- */
+  header h1 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  /* ---------- Navigation (Desktop) ---------- */
+  .navigation {
+    display: flex !important; /* show horizontally on desktop */
+    flex-direction: row;
+    position: static; /* remove absolute dropdown behavior */
+    width: auto;
+    background: none;
+  }
+
+  .navigation li a {
+    padding: 0.5rem 1rem; /* desktop spacing */
+  }
+
+  /* Hide hamburger on desktop */
+  #menu {
+    display: none;
+  }
+
+  /* ---------- Directory Grid ---------- */
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* ---------- Directory List ---------- */
+  #members.list section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #members.list img {
+    max-width: 150px;
+  }
+
+  /* ---------- Footer ---------- */
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
@@ -20,48 +62,3 @@
     text-align: right;
   }
 }
-
-  /* ---------- Header ---------- */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  header h1 {
-    margin-left: 1rem;
-  }
-
-  /* ---------- Navigation ---------- */
-  .navigation {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .navigation li a {
-    padding: 0.5rem 1rem;
-  }
-
-  /* Hide hamburger button */
-   #menu {
-    display: none;
-  }
-
-  /* ---------- Directory Grid ---------- */
-  #members.grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  /* ---------- Directory List ---------- */
-  #members.list section {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  #members.list img {
-    max-width: 150px;
-  }
-
