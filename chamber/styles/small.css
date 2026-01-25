@@ -1,0 +1,217 @@
+/* ---------- Base Styles ---------- */
+:root {
+  --primary-color: #1f4e79;
+  --secondary-color: #f4f4f4;
+  --accent-color: #cfa32f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  max-width: 80px;
+}
+
+header h1 {
+  font-weight: 600;
+  margin-right: 310px;
+  
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  margin-top: 1rem;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* ---------- Hamburger Menu ---------- */
+#menu {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✖";
+}
+
+.navigation.open {
+  display: block;
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ---------- View Buttons ---------- */
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.view-buttons button {
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.view-buttons button:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* ---------- Directory Grid ---------- */
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#members.grid section {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#members img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Directory List ---------- */
+#members.list section {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ---------- Membership Badges ---------- */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.badge.gold {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.badge.silver {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+.badge.member {
+  background-color: #1f4e79;
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #1f4e79;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-left h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-center a {
+  display: inline-block;
+}
+
+.footer-center img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.footer-center a:hover img,
+.footer-center a:focus img {
+  filter: grayscale(0%);
+  outline: none;
+}
+
+.footer-right p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+

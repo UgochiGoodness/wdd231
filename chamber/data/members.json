@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Bakery",
+      "address": "12 Market Road, Bende",
+      "phone": "0803-111-2233",
+      "website": "https://example.com",
+      "image": "business1.jpg",
+      "membership": 3,
+      "description": "Fresh bread and pastries baked daily"
+    },
+    {
+      "name": "Bende Tech Solutions",
+      "address": "45 Innovation Street, Bende",
+      "phone": "0806-555-8899",
+      "website": "https://example.com",
+      "image": "business2.jpg",
+      "membership": 2,
+      "description": "IT support and software services"
+    },
+    {
+      "name": "GreenFarm Produce",
+      "address": "8 Farm Lane, Bende",
+      "phone": "0812-333-7788",
+      "website": "https://example.com",
+      "image": "business3.jpg",
+      "membership": 1,
+      "description": "Organic fruits and vegetables"
+    },
+    {
+      "name": "Royal Touch Salon",
+      "address": "22 Beauty Avenue, Bende",
+      "phone": "0701-456-9988",
+      "website": "https://example.com",
+      "image": "business4.jpg",
+      "membership": 2,
+      "description": "Hair, beauty, and spa services"
+    },
+    {
+      "name": "Bende Auto Care",
+      "address": "5 Motor Park Road, Bende",
+      "phone": "0809-777-3344",
+      "website": "https://example.com",
+      "image": "business5.jpg",
+      "membership": 1,
+      "description": "Vehicle repairs and maintenance"
+    },
+    {
+      "name": "Golden Crust Restaurant",
+      "address": "30 Central Plaza, Bende",
+      "phone": "0815-888-1122",
+      "website": "https://example.com",
+      "image": "business6.jpg",
+      "membership": 3,
+      "description": "Local and continental dishes"
+    },
+    {
+      "name": "Bright Future Academy",
+      "address": "18 School Road, Bende",
+      "phone": "0802-999-4455",
+      "website": "https://example.com",
+      "image": "business7.jpg",
+      "membership": 2,
+      "description": "Private primary and secondary education"
+    }
+  ]
+}
