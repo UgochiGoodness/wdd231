@@ -7,18 +7,17 @@
 
   /* ---------- Navigation (Desktop) ---------- */
   .navigation {
-    display: flex !important; /* show horizontally on desktop */
+    display: flex !important;
     flex-direction: row;
-    position: static; /* remove absolute dropdown behavior */
+    position: static;
     width: auto;
     background: none;
   }
 
   .navigation li a {
-    padding: 0.5rem 1rem; /* desktop spacing */
+    padding: 0.5rem 1rem;
   }
 
-  /* Hide hamburger on desktop */
   #menu {
     display: none;
   }
@@ -28,7 +27,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  /* ---------- Directory List ---------- */
   #members.list section {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -61,33 +59,30 @@
   .footer-right {
     text-align: right;
   }
-}
 
-/* Hero spans full width */
-.hero {
-  grid-column: 1 / -1;
-}
+  /* ---------- Layout Adjustments ---------- */
+  .hero {
+    grid-column: 1 / -1;
+  }
 
-/* Events & Weather side by side */
-.events {
-  grid-column: 1 / 2;
-}
+  .events {
+    grid-column: 1 / 2;
+  }
 
-.weather {
-  grid-column: 2 / 3;
-}
+  .weather {
+    grid-column: 2 / 3;
+  }
 
-/* Spotlights full width */
-.spotlights {
-  grid-column: 1 / -1;
-}
+  .spotlights {
+    grid-column: 1 / -1;
+  }
 
-/* Spotlight cards in a row */
-.spotlight-cards {
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .spotlight-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.spotlight-card {
-  flex: 1;
+  .spotlight-card {
+    flex: 1;
+  }
 }
