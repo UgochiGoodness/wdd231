@@ -244,25 +244,76 @@ footer {
   border-radius: 4px;
 }
 
-/* ---------- Events & Weather ---------- */
+/* ---------- Main Content Grid ---------- */
+.home-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 2rem 2rem 2rem;
+}
+
+/* Events, Current Weather, Weather Forecast containers */
 .events,
-.weather {
+.weather-current,
+.weather-forecast {
   background-color: var(--secondary-color);
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .events h2,
-.weather h2,
-.spotlights h2 {
+.weather-current h2,
+.weather-forecast h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Current Weather content */
+.weather-current {
+  font-size: 0.9rem;
+}
+
+#temperature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-/* ---------- Weather ---------- */
-.weather p {
-  margin: 0.25rem 0;
+#temperature img {
+  width: 48px;
+  height: 48px;
 }
 
+#description {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.weather-details p {
+  margin: 0.2rem 0;
+  font-weight: normal;
+}
+
+/* Weather Forecast styling */
+.weather-forecast #forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.weather-forecast #forecast div {
+  font-weight: 700;
+}
 /* ---------- Spotlights ---------- */
 .spotlights {
   background-color: var(--secondary-color);

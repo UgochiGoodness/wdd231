@@ -1,24 +1,53 @@
 const tempEl = document.getElementById("temperature");
 const descEl = document.getElementById("description");
 const forecastEl = document.getElementById("forecast");
+const highEl = document.getElementById("high");
+const lowEl = document.getElementById("low");
+const humidityEl = document.getElementById("humidity");
+const sunriseEl = document.getElementById("sunrise");
+const sunsetEl = document.getElementById("sunset");
 
-// OpenWeatherMap API key
 const apiKey = "beeb1bdbb4c16c4b481c8ae4067c928d";
 const city = "Bende, NG";
 
+function toFahrenheit(celsius) {
+  return Math.round(celsius * 9 / 5 + 32);
+}
+
+function formatTime(unixTimestamp, timezoneOffset) {
+  const date = new Date((unixTimestamp + timezoneOffset) * 1000);
+  return date.toLocaleTimeString("en-US", { hour: 'numeric', minute: 'numeric', hour12: true });
+}
+
 async function loadWeather() {
   try {
-    // Fetch current weather
     const currentRes = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
     );
     if (!currentRes.ok) throw new Error("Failed to fetch current weather");
     const currentData = await currentRes.json();
 
-    tempEl.textContent = `Current: ${Math.round(currentData.main.temp)}°C`;
-    descEl.textContent = `Conditions: ${currentData.weather[0].description}`;
+    const iconUrl = `https://openweathermap.org/img/wn/${currentData.weather[0].icon}@2x.png`;
 
-    // Fetch 5-day / 3-hour forecast
+    const currentTempF = toFahrenheit(currentData.main.temp);
+    const highF = toFahrenheit(currentData.main.temp_max);
+    const lowF = toFahrenheit(currentData.main.temp_min);
+
+    const timezone = currentData.timezone;
+    const sunrise = formatTime(currentData.sys.sunrise, timezone);
+    const sunset = formatTime(currentData.sys.sunset, timezone);
+
+    // ---- Populate Current Weather ----
+    tempEl.innerHTML = `<img src="${iconUrl}" alt="${currentData.weather[0].description}"> <strong>${currentTempF}°F</strong>`;
+    descEl.innerHTML = `<strong>${currentData.weather[0].main}</strong>`;
+
+    highEl.textContent = `High: ${highF}°F`;
+    lowEl.textContent = `Low: ${lowF}°F`;
+    humidityEl.textContent = `Humidity: ${currentData.main.humidity}%`;
+    sunriseEl.textContent = `Sunrise: ${sunrise}`;
+    sunsetEl.textContent = `Sunset: ${sunset}`;
+
+    // ---- Populate Forecast ----
     const forecastRes = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`
     );
@@ -27,20 +56,26 @@ async function loadWeather() {
 
     forecastEl.innerHTML = "";
 
-    // Pick roughly one forecast per day (every 8th item in 3-hour interval array)
     for (let i = 8; i <= 24; i += 8) {
-      const forecastItem = forecastData.list[i];
-      const date = new Date(forecastItem.dt_txt);
-      const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
+      const item = forecastData.list[i];
+      const date = new Date(item.dt_txt);
+      const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
+      const tempF = toFahrenheit(item.main.temp);
 
-      const forecastDiv = document.createElement("div");
-      forecastDiv.textContent = `${dayName}: ${Math.round(forecastItem.main.temp)}°C, ${forecastItem.weather[0].description}`;
-      forecastEl.appendChild(forecastDiv);
+      const div = document.createElement("div");
+      div.innerHTML = `<strong>${dayName}</strong><br>${tempF}°F`;
+      forecastEl.appendChild(div);
     }
+
   } catch (error) {
     console.error("Weather error:", error);
     tempEl.textContent = "Unable to load weather";
     descEl.textContent = "";
+    highEl.textContent = "";
+    lowEl.textContent = "";
+    humidityEl.textContent = "";
+    sunriseEl.textContent = "";
+    sunsetEl.textContent = "";
     forecastEl.innerHTML = "";
   }
 }

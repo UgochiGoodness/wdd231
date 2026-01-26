@@ -6,7 +6,7 @@
       "phone": "0803-111-2233",
       "website": "https://example.com",
       "image": "business1.jpg",
-      "membership": 3,
+      "membership": "Gold",
       "description": "Fresh bread and pastries baked daily"
     },
     {
@@ -15,7 +15,7 @@
       "phone": "0806-555-8899",
       "website": "https://example.com",
       "image": "business2.jpg",
-      "membership": 2,
+      "membership": "Silver",
       "description": "IT support and software services"
     },
     {
@@ -24,7 +24,7 @@
       "phone": "0812-333-7788",
       "website": "https://example.com",
       "image": "business3.jpg",
-      "membership": 1,
+      "membership": "Member",
       "description": "Organic fruits and vegetables"
     },
     {
@@ -33,7 +33,7 @@
       "phone": "0701-456-9988",
       "website": "https://example.com",
       "image": "business4.jpg",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Hair, beauty, and spa services"
     },
     {
@@ -42,7 +42,7 @@
       "phone": "0809-777-3344",
       "website": "https://example.com",
       "image": "business5.jpg",
-      "membership": 1,
+      "membership": "Member",
       "description": "Vehicle repairs and maintenance"
     },
     {
@@ -51,7 +51,7 @@
       "phone": "0815-888-1122",
       "website": "https://example.com",
       "image": "business6.jpg",
-      "membership": 3,
+      "membership": "Gold",
       "description": "Local and continental dishes"
     },
     {
@@ -60,7 +60,7 @@
       "phone": "0802-999-4455",
       "website": "https://example.com",
       "image": "business7.jpg",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Private primary and secondary education"
     }
   ]
