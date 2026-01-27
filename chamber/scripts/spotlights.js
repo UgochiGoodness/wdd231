@@ -1,7 +1,7 @@
 // Get the container for the spotlight cards
 const spotlightContainer = document.querySelector(".spotlight-cards");
 
-// 🔹 Corrected path: relative to HTML file
+
 const membersURL = "./data/members.json";
 
 async function loadSpotlights() {
@@ -11,7 +11,7 @@ async function loadSpotlights() {
   try {
     const response = await fetch(membersURL);
     const data = await response.json();
-    console.log("Loaded members:", data.members); // 🔹 Debug log
+    console.log("Loaded members:", data.members); 
 
     // Only Gold or Silver members
     const qualifiedMembers = data.members.filter(
@@ -30,7 +30,7 @@ async function loadSpotlights() {
       .sort(() => Math.random() - 0.5)
       .slice(0, numberToShow);
 
-    // Clear any existing cards
+  
     spotlightContainer.innerHTML = "";
 
     // Create cards for each selected member
