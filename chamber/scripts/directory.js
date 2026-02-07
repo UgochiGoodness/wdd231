@@ -33,12 +33,17 @@ function displayMembers(members) {
 gridButton.addEventListener("click", () => {
   membersContainer.classList.add("grid");
   membersContainer.classList.remove("list");
+  gridButton.classList.add("active");
+  listButton.classList.remove("active");
 });
 
 listButton.addEventListener("click", () => {
   membersContainer.classList.add("list");
   membersContainer.classList.remove("grid");
+  listButton.classList.add("active");
+  gridButton.classList.remove("active");
 });
+
 
 // Footer dates
 document.querySelector("#year").textContent = new Date().getFullYear();

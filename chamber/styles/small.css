@@ -153,6 +153,15 @@ h2 {
   border-bottom: 1px solid #ddd;
 }
 
+#members.list {
+  display: block; /* stacks all members vertically */
+}
+
+#members.list section {
+  width: 100%; /* make each card full width */
+}
+
+
 /* ---------- Membership Badges ---------- */
 .badge {
   display: inline-block;
