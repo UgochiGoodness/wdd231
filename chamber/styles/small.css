@@ -338,3 +338,145 @@ footer {
   max-width: 100px;
   margin-bottom: 0.5rem;
 }
+
+/* ---------- Join Page Layout ---------- */
+.join-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+/* ---------- Join Form ---------- */
+.join-form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.join-form h2 {
+  margin-top: 0;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.join-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.join-form input[type="submit"] {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* ---------- Membership Cards ---------- */
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Cards appear below form on mobile automatically */
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Initial page-load animation (NOT hover-based) */
+.card.animate {
+  opacity: 0;
+  animation: fadeInCard 1.5s forwards;
+}
+
+.card.animate:nth-child(1) { animation-delay: 0.2s; }
+.card.animate:nth-child(2) { animation-delay: 0.4s; }
+.card.animate:nth-child(3) { animation-delay: 0.6s; }
+.card.animate:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card a:hover,
+.card a:focus {
+  color: var(--accent-color);
+}
+
+/* ---------- Modals ---------- */
+dialog {
+  border: none;
+  border-radius: 6px;
+  padding: 1.5rem;
+  max-width: 400px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+dialog button:hover,
+dialog button:focus {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* ---------- Thank You Page ---------- */
+.thankyou {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.thankyou p {
+  font-weight: 500;
+}

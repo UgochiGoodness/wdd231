@@ -26,73 +26,17 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
+<body> <header>
+    <h1>Thank You!</h1>
+  </header>
 
-<body>
-    <header>
-       <img src="images/chamber.jpg" alt="Chamber Logo">
-       <h1>Bende Chamber of Commerce</h1>
-        <nav>
-          <button id="menu" aria-label="Open navigation menu"></button>
-            <ul class="navigation">
-               <li><a href="index.html" class="active">Home</a></li>
-               <li><a href="directory.html" class="active">Directory</a></li>
-               <li><a href="join.html" class="active">Join</a></li>
-               <li><a href="discovery.html" class="active">Discover</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="thankyou">
+    <p>Thank you for applying for chamber membership.</p>
 
-       <main>
-               <!-- HERO -->
-            <section class="hero">
-               <img src="images/hero.jpg" alt="Bende community and local businesses">
-               <a href="#" class="cta">Join the Chamber</a>
-            </section>
-
-             <!-- WRAPPER FOR EVENTS  -->
-        <div class="home-main">  
-                <!-- EVENTS -->
-                  <section class="events">
-                     <h2>Current Events</h2>
-                     <p>Business Networking Night – March 15</p>
-                     <p>Small Business Workshop – April 2</p>
-                  </section>
-
-                     <!-- CURRENT WEATHER -->
-                <section class="weather-current">
-                      <h2>Current Weather</h2>
-                         <!-- Weather icon and temp dynamically inserted by JS -->
-                    <div class="weather-icon-temp">
-                      <img id="weather-icon" src="images/weather.png" alt="Weather icon" />
-                      <div id="temperature"></div>
-                    </div>
-                      <div id="description"></div>
-                        <div class="weather-details">
-                           <p id="high"></p>
-                           <p id="low"></p>
-                           <p id="humidity"></p>
-                           <p id="sunrise"></p>
-                           <p id="sunset"></p>
-                        </div>
-                </section>
-
-              <!-- WEATHER FORECAST -->
-          <section class="weather-forecast">
-            <h2>Weather Forecast</h2>
-            <div id="forecast"></div>
-          </section>
-        </div> 
-
-  <!-- SPOTLIGHTS -->
-  <section class="spotlights">
-    <h2>Member Spotlights</h2>
-    <div class="spotlight-cards"></div>
-  </section>
-</main>
-
+    <div id="formData"></div>
+  </main>
     <footer>
       <div class="footer-content">
 
