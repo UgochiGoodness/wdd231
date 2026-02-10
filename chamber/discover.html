@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bende Chamber of Commerce | Directory</title>
+    <title>Bende Chamber of Commerce | Discover</title>
     <meta name="description" content="The Bende Chamber of Commerce business directory provides a comprehensive listing of local businesses, services, and member organizations in Nigeria.">
     <meta name="author" content="Ugochi Goodness Ugorji">
 
@@ -25,9 +25,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-</head>
+    <link rel="stylesheet" href="styles/medium.css">
 
-<body>
+    <script src="js/discover.js" type="module" defer></script>
+</head>
+<body> 
     <header>
        <img src="images/chamber.jpg" alt="Chamber Logo">
        <h1>Bende Chamber of Commerce</h1>
@@ -42,17 +44,13 @@
         </nav>
     </header>
 
-        <main>
-         <div class="view-buttons">
-           <button id="grid">Grid</button>
-           <button id="list">List</button>
-         </div>
+    <main>
+  <section id="visit-message"></section>
 
-          <section id="members" class="grid">
-              <h2 class="sr-only">Business Directory Members</h2>
-                 <!-- Member cards will be inserted here via JS -->
-          </section>
-        </main>
+  <section class="discover-grid">
+    <!-- cards injected here -->
+  </section>
+</main>
 
     <footer>
       <div class="footer-content">
@@ -85,6 +83,5 @@
 
        </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
 </body>
 </html>
