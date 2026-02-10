@@ -151,16 +151,12 @@ h2 {
   background-color: #fff;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 
 #members.list {
   display: block; /* stacks all members vertically */
 }
-
-#members.list section {
-  width: 100%; /* make each card full width */
-}
-
 
 /* ---------- Membership Badges ---------- */
 .badge {
