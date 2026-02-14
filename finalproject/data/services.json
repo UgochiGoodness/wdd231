@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Business Website",
+    "category": "Web Development",
+    "price": 500,
+    "level": "Starter",
+    "description": "Responsive 5-page website for small businesses."
+  },
+  {
+    "id": 2,
+    "name": "E-Commerce Website",
+    "category": "Web Development",
+    "price": 1200,
+    "level": "Advanced",
+    "description": "Online store with payment integration."
+  },
+  {
+    "id": 3,
+    "name": "Website Maintenance Plan",
+    "category": "Maintenance",
+    "price": 100,
+    "level": "Monthly",
+    "description": "Monthly updates, backups, and security monitoring."
+  },
+  {
+    "id": 4,
+    "name": "Domain & Hosting Setup",
+    "category": "Digital Setup",
+    "price": 150,
+    "level": "Basic",
+    "description": "Domain registration and hosting configuration."
+  },
+  {
+    "id": 5,
+    "name": "SEO Optimization",
+    "category": "Marketing",
+    "price": 300,
+    "level": "Intermediate",
+    "description": "Improve website visibility on search engines."
+  },
+  {
+    "id": 6,
+    "name": "Website Redesign",
+    "category": "Web Development",
+    "price": 800,
+    "level": "Intermediate",
+    "description": "Modern redesign of outdated websites."
+  },
+  {
+    "id": 7,
+    "name": "Tech Consultation",
+    "category": "Support",
+    "price": 80,
+    "level": "Hourly",
+    "description": "Professional consultation for digital solutions."
+  },
+  {
+    "id": 8,
+    "name": "Security Setup",
+    "category": "Support",
+    "price": 200,
+    "level": "Advanced",
+    "description": "Website security configuration and SSL setup."
+  },
+  {
+    "id": 9,
+    "name": "Content Updates",
+    "category": "Maintenance",
+    "price": 75,
+    "level": "Per Update",
+    "description": "Updating images, text, and content."
+  },
+  {
+    "id": 10,
+    "name": "Landing Page Design",
+    "category": "Web Development",
+    "price": 350,
+    "level": "Starter",
+    "description": "High-converting single landing page."
+  },
+  {
+    "id": 11,
+    "name": "Portfolio Website",
+    "category": "Web Development",
+    "price": 600,
+    "level": "Starter",
+    "description": "Personal portfolio for professionals."
+  },
+  {
+    "id": 12,
+    "name": "Email Setup",
+    "category": "Digital Setup",
+    "price": 120,
+    "level": "Basic",
+    "description": "Professional email configuration."
+  },
+  {
+    "id": 13,
+    "name": "Website Audit",
+    "category": "Support",
+    "price": 250,
+    "level": "Intermediate",
+    "description": "Full performance and SEO audit."
+  },
+  {
+    "id": 14,
+    "name": "Backup Configuration",
+    "category": "Maintenance",
+    "price": 90,
+    "level": "Monthly",
+    "description": "Automated backup setup."
+  },
+  {
+    "id": 15,
+    "name": "Analytics Integration",
+    "category": "Marketing",
+    "price": 180,
+    "level": "Basic",
+    "description": "Google Analytics integration and setup."
+  }
+]

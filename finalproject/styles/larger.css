@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+
+  /* Hide hamburger */
+  #menuBtn {
+    display: none;
+  }
+
+ nav {
+    position: static;
+    display: flex !important;
+    flex-direction: row;   
+    justify-content: right;
+    gap: 0.5rem;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+
+  nav a {
+    padding: 0;
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Services grid layout */
+  #servicesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Improve spacing */
+  main {
+    margin-top: 3rem;
+  }
+}

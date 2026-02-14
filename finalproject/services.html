@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | BonTech Digital Services</title>
+  <meta name="description" content="Explore professional web development and digital support services offered by BonTech.">
+  <meta name="author" content="Ugochi Goodness Ugorji">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <meta property="og:title" content="BonTech Services">
+  <meta property="og:description" content="Professional digital services for small businesses.">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+
+<header>
+  <h1>BonTech Digital Services</h1>
+
+  <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Our Services</h2>
+
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="Web Development">Web Development</option>
+    <option value="Maintenance">Maintenance</option>
+    <option value="Digital Setup">Digital Setup</option>
+    <option value="Support">Support</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+
+  <section id="servicesContainer"></section>
+
+  <dialog id="serviceModal">
+    <button id="closeModal">Close</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 BonTech Digital Services</p>
+  <p><a href="attributions.html">Attributions</a></p>
+  <p><a href="https://your-video-link.com">Project Video</a></p>
+  <p id="lastModified"></p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
