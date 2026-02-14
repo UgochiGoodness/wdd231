@@ -1,34 +1,55 @@
+/* -------------------- */
+/* MEDIA QUERIES        */
+/* -------------------- */
+
 @media (min-width: 768px) {
 
-  /* Hide hamburger */
+  /* Hide hamburger button on desktop */
   #menuBtn {
     display: none;
   }
 
- nav {
-    position: static;
-    display: flex !important;
+  /* Horizontal nav for desktop */
+  nav {
+    display: flex;
     flex-direction: row;   
-    justify-content: right;
-    gap: 0.5rem;
+    justify-content: flex-end; /* align nav links to the right */
+    gap: 2rem;                /* space between links */
     background: none;
+    margin-top: 0;
     width: auto;
     padding: 0;
   }
 
   nav a {
     padding: 0;
-    margin-right: 50px;
+    margin: 0;
     font-size: 1rem;
+    color: white; /* ensure visibility */
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--accent);
+  }
+
+  /* Align header content properly */
+  .header-container {
+    display: flex;
+    justify-content: space-between; /* h1 on left, nav on right */
+    align-items: center;
   }
 
   /* Services grid layout */
   #servicesContainer {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 
-  /* Improve spacing */
+  /* Improve spacing for main content */
   main {
-    margin-top: 3rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
   }
 }

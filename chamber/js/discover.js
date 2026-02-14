@@ -21,23 +21,23 @@ if (container) {
   });
 }
 
-const visitText = document.querySelector("#visit-text");
+const visitMessage = document.querySelector("#visit-message");
 
-if (visitText) {   
+if (visitMessage) {   
   const lastVisit = localStorage.getItem("lastVisit");
   const now = Date.now();
 
   if (!lastVisit) {
-    visitText.textContent = "Welcome! Let us know if you have any questions.";
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
   } else {
     const diffDays = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
 
     if (diffDays < 1) {
-      visitText.textContent = "Back so soon! Awesome!";
+      visitMessage.textContent = "Back so soon! Awesome!";
     } else if (diffDays === 1) {
-      visitText.textContent = "You last visited 1 day ago.";
+      visitMessage.textContent = "You last visited 1 day ago.";
     } else {
-      visitText.textContent = `You last visited ${diffDays} days ago.`;
+      visitMessage.textContent = `You last visited ${diffDays} days ago.`;
     }
   }
 
